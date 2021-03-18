@@ -8,7 +8,7 @@
         Title="Könyvtár App" Height="460" Width="610" Background="Black">
     <Grid>
         <TabControl Background="Black" BorderBrush="#FF4B5BA4" Foreground="Black">
-            <TabItem Name="Konyvek" Header="Könyvek" Loaded="Konyvek_Loaded">
+            <TabItem Name="Konyvek" Header="Könyvek" Loaded="Loaded_Books">
                 <DockPanel>
                     <DataGrid x:Name="Konyv">
                         <DataGrid.Columns>
@@ -35,7 +35,7 @@
                     </DataGrid>
                 </DockPanel>
             </TabItem>
-            <TabItem Name="Kolcson" Header="Kölcsönzött" Loaded="Kolcson_Loaded">
+            <TabItem Name="Kolcson" Header="Kölcsönzött" Loaded="Loaded_Loan">
                 <DockPanel>
                     <DataGrid x:Name="Kiadott">
                         <DataGrid.Columns>
