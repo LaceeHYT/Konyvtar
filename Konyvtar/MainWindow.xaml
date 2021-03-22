@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Konyvtar"
         mc:Ignorable="d"
-        Title="Könyvtár App" Height="460" Width="610" Background="Black">
+        Title="Könyvtár App" Height="410" Width="540" Background="Black">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg"/>
+        </Grid.Background>
         <TabControl Background="Black" BorderBrush="#FF4B5BA4" Foreground="Black">
-            <TabItem Name="Konyvek" Header="Könyvek" Loaded="Loaded_Books">
+            <TabItem Name="Konyvek" Header="Könyvek" Loaded="Konyvek_Loaded">
                 <DockPanel>
                     <DataGrid x:Name="Konyv">
                         <DataGrid.Columns>
@@ -21,7 +24,7 @@
                     </DataGrid>
                 </DockPanel>
             </TabItem>
-            <TabItem Name="Tagok" Header="Tagok" Loaded="Loaded_Members">
+            <TabItem Name="Tagok" Header="Tagok" Loaded="Tagok_Loaded">
                 <DockPanel>
                     <DataGrid x:Name="Tag">
                         <DataGrid.Columns>
@@ -35,7 +38,7 @@
                     </DataGrid>
                 </DockPanel>
             </TabItem>
-            <TabItem Name="Kolcson" Header="Kölcsönzött" Loaded="Loaded_Loan">
+            <TabItem Name="Kolcson" Header="Kölcsönzött" Loaded="Kolcson_Loaded">
                 <DockPanel>
                     <DataGrid x:Name="Kiadott">
                         <DataGrid.Columns>

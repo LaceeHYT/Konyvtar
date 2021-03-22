@@ -82,7 +82,7 @@ namespace Konyvtar
             }
         }
 
-        private void Loaded_Books(object sender, RoutedEventArgs e)
+        private void Konyvek_Loaded(object sender, RoutedEventArgs e)
         {
             foreach (var item in File.ReadAllLines("konyvek.txt"))
             {
@@ -92,7 +92,7 @@ namespace Konyvtar
             Konyv.AutoGenerateColumns = false;
         }
 
-        private void Loaded_Members(object sender, RoutedEventArgs e)
+        private void Tagok_Loaded(object sender, RoutedEventArgs e)
         {
             foreach (var item in File.ReadAllLines("tagok.txt"))
             {
@@ -102,7 +102,7 @@ namespace Konyvtar
             Tag.AutoGenerateColumns = false;
         }
 
-        private void Loaded_Loan(object sender, RoutedEventArgs e)
+        private void Kolcson_Loaded(object sender, RoutedEventArgs e)
         {
             foreach (var item in File.ReadAllLines("kolcsonzesek.txt"))
             {
@@ -111,5 +111,5 @@ namespace Konyvtar
             Kiadott.ItemsSource = A3;
             Kiadott.AutoGenerateColumns = false;
         }
-    }
+    }   
 }

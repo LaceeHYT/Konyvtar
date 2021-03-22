@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F18D8CF-8BF3-4ED4-82E0-ECEF07961F50}</ProjectGuid>
+    <ProjectGuid>{5D138430-698E-45C6-A5E2-E5FD466DD396}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Konyvtar</RootNamespace>
     <AssemblyName>Konyvtar</AssemblyName>
@@ -96,11 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="kolcsonzesek.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="konyvek.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="tagok.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
